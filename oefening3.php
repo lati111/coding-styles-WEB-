@@ -54,3 +54,7 @@ for ($x = 0; $x < count($arr); $x++) {
     echo $arr[$x] . "<br>";
 }
 
+$arr = ["Jan" => 122, "Pedro" => 455, "Anna" => 987, "Vic" => 2212];
+foreach ($arr as $key => $value) {
+    echo "$key heeft $value euro" . "<br>";
+}
