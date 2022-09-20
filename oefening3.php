@@ -58,3 +58,10 @@ $arr = ["Jan" => 122, "Pedro" => 455, "Anna" => 987, "Vic" => 2212];
 foreach ($arr as $key => $value) {
     echo "$key heeft $value euro" . "<br>";
 }
+
+$mysqli = new mysqli('localhost', 'root', 'root', 'shop');
+$sql = 'SELECT product FROM shoppingcart';
+$mysqli_result = $mysqli->query($sql);
+while ($row = mysqli_fetch_array($mysqli_result)) {
+    echo $row['product'] . "<br>";
+}
