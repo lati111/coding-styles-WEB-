@@ -26,3 +26,10 @@ if ($x > $y) {
 } else {
     echo '$x en $y zijn kleiner dan 0';
 }
+
+$x = 0;
+$y = 5;
+if ($x !== 0) {
+    echo '$x is niet 0';
+}
+
