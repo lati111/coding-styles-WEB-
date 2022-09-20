@@ -17,11 +17,12 @@ if ($x !== 0 && $x === $y) {
     echo '$x en $y zijn gelijk, en $x is niet 0';
 }
 
-$x = 5;$y = 0;
+$x = 5;
+$y = 0;
 if ($x > $y) {
     echo '$x is groter dan $y';
-} elseif ($x === 0) { 
+} elseif ($x === 0) {
     echo '$x is 0';
-} else{ 
+} else {
     echo '$x en $y zijn kleiner dan 0';
 }
